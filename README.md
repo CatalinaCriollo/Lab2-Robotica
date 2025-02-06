@@ -76,6 +76,54 @@ Su característica más destacada es su pantalla táctil a color de gran tamaño
 
 Una de sus grandes ventajas es la flexibilidad en la disposición de comandos, ya que su interfaz puede personalizarse según las necesidades del usuario. Además, permite la edición de trayectorias en tiempo real de una manera más visual y dinámica, facilitando los ajustes y optimizaciones sin necesidad de reprogramar desde cero.
     
+## Software de programación
+
+### INFORM (Yaskawa/Motoman)
+
+* Basado en una estructura de líneas secuenciales, más parecido a un lenguaje de programación estructurada como BASIC.
+* Utiliza una combinación de comandos de menú y líneas de código que pueden hacer que la programación sea menos intuitiva para usuarios nuevos.
+* Soporta estructuras básicas de control (if, loops simples), pero con menos opciones avanzadas que RAPID.
+* Compatible con MotoSim, que permite simulación.
+* Enfocado en la programación directa desde el teach pendant, con menos énfasis en simulación offline.
+* Más utilizado en celdas de trabajo con múltiples robots, ya que el DX100 (su controlador principal) permite el manejo de hasta 8 robots en simultáneo.
+* Enfocado en automatización industrial tradicional, donde la programación en línea es prioritaria.
+* Ideal para líneas de producción de alta densidad y sincronización de múltiples robots.
+
+Código de ejemplo:
+
+```
+NOP
+MOVL P1 V=100.0
+MOVJ P2 V=50.0
+END
+```
+Con este ejemplo es posible evidenciar que se tiene un código secuencial, sin estructuras de modularidad. Los movimientos MOVL y MOVJ no presentan una capacidad avanzada de personalización. Y que este proceso es sdependiente de la programación a través del teach pendant.
+
+
+### RAPID (ABB)
+
+* Posee una sintaxis similar a lenguajes de alto nivel como Python o C, lo que lo hace más intuitivo para programadores con experiencia previa en otros lenguajes.
+* Se estructura en módulos y rutinas, lo que facilita la organización del código y su reutilización.
+* Cuenta con funciones y variables bien definidas, lo que mejora la legibilidad del código.
+* Soporta estructuras de control avanzadas (if, while, for, switch-case), lo que facilita la programación lógica y adaptable.
+* Tiene una gran capacidad de personalización y manipulación de datos.
+* Mejor opción para entornos donde se requiere programación estructurada y flexible.
+* Adecuado para proyectos de integración con IoT y sistemas en la nube.
+  
+Código de ejemplo:
+
+```
+MODULE MainModule
+  VAR robtarget p1:=[100,200,300,0,0,1,0];
+  
+  PROC main()
+    MoveJ p1, v100, fine, tool0;
+    MoveL p1, v50, z10, tool0;
+  ENDPROC
+ENDMODULE
+```
+Con este ejemplo es posible evidenciar que se tiene un código estructurado en módulos y procedimientos, más legible y reutilizable. Se emplea el uso de variables robtarget para definir posiciones. Y se usan comandos MoveJ y MoveL para movimientos con control de velocidad y precisión.
+
 ## Aplicaciones industruales
 
 ### Motoman MH6:
