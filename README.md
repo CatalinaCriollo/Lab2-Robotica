@@ -35,18 +35,37 @@ En este informe de laboratorio se comparan dos manipuladores ampliamente utiliza
 
 ## Controlador 
 * Motoman MH6:
-    - El controlador DX100 del robot proporciona funciones avanzadas de programación y movimiento, lo que permite una integración perfecta en entornos de fabricación complejos. Su interfaz fácil de usar simplifica la programación y el funcionamiento, minimizando el tiempo de configuración y mejorando la productividad.
+  
+  ![](Motoman_DX100_Controller.jpg)
+  
+El DX100 es un controlador cuenta con una interfaz intuitiva que simplifica la programación y el manejo del robot, reduciendo los tiempos de configuración y mejorando la productividad en entornos de manufactura complejos.
+
+Una de sus principales ventajas es su capacidad multi-robot, ya que puede controlar hasta 8 robots simultáneamente (72 ejes en total). Esto lo convierte en una opción ideal para aplicaciones que requieren la sincronización de múltiples robots en celdas de producción de alta densidad. Su arquitectura modular y centralizada permite la gestión eficiente de manipuladores, optimizando los tiempos de respuesta mediante procesamiento en paralelo. Además, su diseño compacto reduce el espacio ocupado en la celda de trabajo, facilitando la integración en distintas configuraciones industriales.
+
+La programación del DX100 se basa en el lenguaje INFORM, desarrollado por Motoman. Aunque es un sistema potente y versátil, presenta una curva de aprendizaje más pronunciada en comparación con otros entornos de programación más intuitivos. El controlador permite la programación en línea a través de un teach pendant con pantalla a color, así como programación offline mediante el software MotoSim, lo que ofrece flexibilidad para simular y optimizar tareas antes de su implementación en la producción.
+
+En términos de conectividad, el DX100 está diseñado principalmente para la coordinación de múltiples robots dentro de una celda de trabajo, pero también ofrece compatibilidad con diversos protocolos de comunicación industrial. Soporta Ethernet/IP, DeviceNet, Profibus y CC-Link, permitiendo la integración con PLCs y sistemas SCADA. Además, cuenta con soporte para visión artificial y sensores externos, lo que amplía su aplicabilidad en entornos de manufactura avanzada.
+  ### Teach Pendant
+      
+
       
 * ABB IRB 140:
-    Equipado con el último controlador IRC5 .
-    IRC5 es el controlador de robot de quinta generación de ABB. Su tecnología de control de movimiento, TrueMove y QuickMove, es clave para el rendimiento del robot en términos de precisión, velocidad, tiempo de ciclo, programación y sincronización con dispositivos externos.
-    Basado en un modelado dinámico avanzado, el IRC5 optimiza el rendimiento del robot para el tiempo de ciclo físicamente más corto posible (QuickMove) y la precisión precisa de la trayectoria (TrueMove). Junto con una ruta independiente de la velocidad, el comportamiento predecible y de alto rendimiento se entrega automáticamente, sin necesidad de ajuste por parte del programador.
-    Lenguaje de programacion rapido
+  
+ ![](30265-2663583.jpg) 
+ 
+El IRC5 es un controlador modular y escalable de quinta generación desarrollado por ABB, diseñado para ofrecer un control avanzado y preciso del movimiento de los robots industriales. Su arquitectura flexible permite la personalización mediante módulos adaptables a distintas aplicaciones, garantizando un rendimiento óptimo en términos de velocidad, precisión y sincronización con dispositivos externos.
+
+Uno de sus principales diferenciadores es su tecnología de control de movimiento, basada en TrueMove™ y QuickMove™. TrueMove™ asegura trayectorias suaves y exactas independientemente de la velocidad, mientras que QuickMove™ optimiza la aceleración y desaceleración, reduciendo los tiempos de ciclo al mínimo posible. Gracias a su modelado dinámico avanzado, el IRC5 entrega un comportamiento predecible y de alto rendimiento sin necesidad de ajustes adicionales por parte del programador.
+
+El controlador opera con RobotWare, un sistema operativo que facilita actualizaciones y personalización, además de permitir la integración con dispositivos externos y periféricos. Su lenguaje de programación, RAPID, combina simplicidad, flexibilidad y potencia, ofreciendo un entorno sin restricciones con múltiples funciones avanzadas. Este lenguaje es más intuitivo y accesible en comparación con otros sistemas, brindando un amplio soporte para diversas aplicaciones industriales.
+
+La programación del IRC5 se potencia con RobotStudio, un entorno de simulación que permite desarrollar, probar y optimizar programas tanto online como offline, reduciendo tiempos de configuración y mejorando la productividad. Su teach pendant cuenta con una interfaz gráfica avanzada y pantalla táctil, lo que facilita la interacción con el sistema y la programación en tiempo real.
+
+En términos de conectividad, el IRC5 es compatible con una amplia gama de protocolos industriales, como OPC UA, PROFINET, EtherNet/IP y Modbus, lo que le permite integrarse fácilmente en entornos de automatización interconectados. Su compatibilidad con visión artificial, sensores inteligentes y sistemas de seguridad lo hace ideal para aplicaciones de manufactura avanzada. Además, su capacidad de comunicación con la nube e IoT le permite adaptarse a los requerimientos de la Industria 4.0.
+
+
+### Teach Pendant
     
-    La combinación perfecta de simplicidad, flexibilidad y potencia. RAPID es un lenguaje verdaderamente ilimitado con múltiples funciones avanzadas y un potente soporte para muchas aplicaciones de proceso.
-    Comunicación
-    
-    El IRC5 es compatible con los buses de campo de última generación para E / S y es un nodo de buen comportamiento en cualquier red de planta. Las interfaces de sensores, el acceso a discos remotos y los mensajes de socket son ejemplos de las muchas funciones de red potentes.
 ## Aplicaciones industruales
 
 * Motoman MH6: El Motoman MH6 es un robot industrial versátil diseñado para una amplia variedad de aplicaciones en sectores como manufactura, ensamblaje, logística y automotriz. Su diseño delgado, alta velocidad y capacidad de montaje en múltiples posiciones lo hacen ideal para entornos industriales donde se requiere precisión, flexibilidad y eficiencia. Entre sus principales aplicaciones se encuentra:
