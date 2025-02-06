@@ -148,3 +148,11 @@ Con este ejemplo es posible evidenciar que se tiene un código estructurado en m
 # Practica
 
 Se realizo un código en python
+
+# Conclusiones (falta redactar)
+* Si se necesita mayor precisión y flexibilidad en espacios reducidos, el ABB IRB 140 es la mejor opción.
+* Si se requiere mayor alcance, robustez y versatilidad en aplicaciones de soldadura y manipulación de materiales, el Motoman MH6 es más adecuado.
+* Ambos robots son altamente eficientes, pero su selección debe basarse en los requisitos específicos de cada aplicación industrial.
+* El Teach Pendant del DX100 es ideal para entornos industriales que requieren control centralizado de múltiples robots, con una programación detallada pero menos visual. Su enfoque en el lenguaje INFORM puede hacer que la curva de aprendizaje sea más pronunciada.
+* El Teach Pendant del IRC5 ofrece una interfaz más intuitiva y moderna con pantalla táctil, facilitando la programación y configuración del robot. Su integración con RobotStudio y el uso de RAPID lo hacen más accesible y eficiente en la optimización de procesos industriales.
+* En general, RAPID es más avanzado y flexible, ideal para aplicaciones donde se requiere personalización, integración con sistemas modernos y programación estructurada. INFORM, en cambio, está más enfocado en la programación de robots en entornos industriales con múltiples manipuladores, donde la rapidez en la configuración es clave.
