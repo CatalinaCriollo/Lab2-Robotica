@@ -1,4 +1,4 @@
-# Laboratorio N°2 - Robotica-O peración, Análisis y Comparación del Manipulador Motoman MH6
+# Laboratorio N°2 - Robotica- Operación, Análisis y Comparación del Manipulador Motoman MH6
 
 Integrantes: Catalina Criollo Castelblanco - Diego Fernando Malagón Saenz
 
@@ -7,9 +7,15 @@ Integrantes: Catalina Criollo Castelblanco - Diego Fernando Malagón Saenz
 En este informe de laboratorio se comparan dos manipuladores ampliamente utilizados en la industria: el Motoman MH6 de Yaskawa y el ABB IRB 140 de ABB. La comparación se realiza en función de especificaciones técnicas, precisión, capacidad de carga, flexibilidad, control y aplicaciones, con el fin de determinar cuál es más adecuado para diferentes escenarios industriales*.
 
 
-# Desarrollo
+# Comparación
 
-## Apariencia*
+* Motoman MH6:
+  
+![](Motoman_MH6_cutout.png)
+
+* ABB IRB 140:
+  
+![](ABB_IRB_140_0001.png)
 
 ## Especificaciones Técnicas
 
