@@ -4,7 +4,7 @@ Integrantes: Catalina Criollo Castelblanco - Diego Fernando Malagón Saenz
 
 # Resumen
 
-En este informe de laboratorio se comparan dos manipuladores ampliamente utilizados en la industria: el Motoman MH6 de Yaskawa y el ABB IRB 140 de ABB. La comparación se realiza en función de especificaciones técnicas, precisión, capacidad de carga, flexibilidad, control y aplicaciones, con el fin de determinar cuál es más adecuado para diferentes escenarios industriales*.
+En este informe de laboratorio se comparan dos manipuladores ampliamente utilizados en la industria: el Motoman MH6 de Yaskawa y el ABB IRB 140 de ABB. La comparación se realiza en función de especificaciones técnicas, control y aplicaciones, con el fin de determinar cuál es más adecuado para diferentes escenarios industriales.
 
 
 # Comparación
@@ -28,7 +28,7 @@ En este informe de laboratorio se comparan dos manipuladores ampliamente utiliza
 | Repetibilidad | ±0.08 mm | ±0.01 mm |
 | Peso | 130 kg | 98 kg |
 | Montaje | Suelo, pared, techo | Suelo, pared, inclinado, techo| 
-|Velocidad máxima por eje | 200-250°/s | 250-300°/s |
+| Velocidad máxima por eje | 200-250°/s | 250-300°/s |
 | Controlador | DX100/ DX200 | IRC5 |
 | Software de programación | MotoPlus, INFORM II | RAPID|
 | Aplicaciones principales | Soldadura, ensamblaje, manipulación de materiales | Ensamblaje, manipulación de materiales, carga/descarga, soldadura |
@@ -48,6 +48,9 @@ En términos de conectividad, el DX100 está diseñado principalmente para la co
 * Teach Pendant
   
   ![](teachmoto.png)
+
+Este Teach Pendant cuenta con un diseño compacto y ligero, pensado para facilitar su uso en largas jornadas. Presenta una pantalla a color con botones físicos dedicados para navegación y control. Su disposición de botones esta pensada para optipimzar la programación en lenguaje INFORM. Se destaca que incorpora un dial de desplazamiento manual (jog dial) para ajustar movimientos con precisión. Otro punto a mencionar es que requiere el uso de combinaciones de botones físicos para acceder a ciertas funciones. Y aunque eficiente, la navegación puede resultar menos intuitiva para nuevos usuarios.
+
       
 ### ABB IRB 140:
   
@@ -66,7 +69,12 @@ En términos de conectividad, el IRC5 es compatible con una amplia gama de proto
 
 * Teach Pendant
   ![](teachabb.png)
+  
+El FlexPendant cuenta con una construcción más robusta, con un diseño ligeramente más pesado en comparación con otros modelos, pero optimizado para un uso ergonómico en entornos industriales.
 
+Su característica más destacada es su pantalla táctil a color de gran tamaño, que permite una interacción más fluida y visual, reduciendo la dependencia de botones físicos. La interfaz gráfica avanzada, basada en íconos y menús desplegables, facilita la navegación y el acceso rápido a funciones clave, lo que agiliza la programación y configuración del robot.
+
+Una de sus grandes ventajas es la flexibilidad en la disposición de comandos, ya que su interfaz puede personalizarse según las necesidades del usuario. Además, permite la edición de trayectorias en tiempo real de una manera más visual y dinámica, facilitando los ajustes y optimizaciones sin necesidad de reprogramar desde cero.
     
 ## Aplicaciones industruales
 
