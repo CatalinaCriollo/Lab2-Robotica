@@ -229,7 +229,20 @@ Por lo tanto, en aplicaciones donde el robot debe moverse rápidamente entre cic
    * En caso de desear ejecutar un programa cambiar el selector de modo en el DX100 a "Auto".
    * Guardar la posición si es necesario antes de ejecutar una rutina automática.
   
+### Explicación sobre los niveles de velocidad
+En el Motoman MH la velocidad se puede modificar en diferentes modos y afecta tanto los desplazamientos manuales como la ejecución de programas automáticos. En el modo de Teach, la velocidad del robot es controlada manualmente mediante el Teach Pendant, mediante el botón Manual Speed.
 
+![](Boton_Velocidades.png)
+
+Existen varios niveles para garantizar seguridad y precisión, como se ven en la imágen de abajo, estos indicadores se puden visualizar en la parte superior de la pantalla. Estos son Low (Baja Velocidad), Medium (Velocidad Media) y High (Alta Velocidad) .
+
+![](Velocidades.png)
+
+Entre los factores que afectan la velocidad están: 
+* Carga en el efector final: A mayor carga, el controlador ajusta la velocidad para evitar pérdida de precisión o inercia excesiva.
+* Tipo de movimiento: Movimientos lineales suelen ser más lentos que los movimientos articulares.
+* Seguridad y zonas restringidas: En ciertas áreas programadas, el robot puede reducir su velocidad automáticamente.
+* Limitaciones por normativa: Algunos entornos industriales imponen restricciones de velocidad para proteger a los operadores.
 
 
 ## Aplicaciones industruales
@@ -254,7 +267,7 @@ Por lo tanto, en aplicaciones donde el robot debe moverse rápidamente entre cic
   -  Carga, descarga y manipulación de materiales: Se emplea en líneas de producción automatizadas, optimizando la transferencia de piezas y el mantenimiento de máquinas. Su capacidad para manipular materiales frágiles y de alta precisión le permite mejorar la calidad del proceso productivo, minimizando el margen de error y reduciendo el desgaste de los componentes.   
 
 # Practica
-Se realizó un código en python tomando como base el código de ejemplo presentado en la documentación del laboratorio, la idea era hacer una figura sencilla basada en la forma de una flor definida a partir de coordenadas polares, utilizando la siguiente expresión:
+Se realizó un código en python tomando como base el código de ejemplo presentado en la documentación del laboratorio. Este código se encuentra adjunto en el repositorio, con el nombre de code_flower.py. La idea era hacer una figura sencilla basada en la forma de una flor definida a partir de coordenadas polares, utilizando la siguiente expresión:
 
  $\ r = \frac{A \cdot \left(1 + b \cdot \sin(k \cdot \theta)\right)}{1 + b}\$
  
