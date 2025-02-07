@@ -204,6 +204,33 @@ Si se busca seguridad y mantenimiento, Home1 es la mejor opción, ya que el robo
 Por otro lado, si se prioriza la eficiencia y reducción de tiempos de ciclo, Home2 es más conveniente, pues el robot ya se encuentra en una posición más cercana a la tarea a ejecutar.
 Por lo tanto, en aplicaciones donde el robot debe moverse rápidamente entre ciclos productivos, Home2 es preferible porque reduce el tiempo de desplazamiento innecesario. Sin embargo, en situaciones donde el robot debe detenerse en una posición segura o evitar colisiones, Home1 es la opción ideal.
 
+### Procedimiento Detallado para Realizar Movimientos Manuales en el Motoman MH6
+1. Preparación del Robot para el Movimiento Manual
+   * Encender el controlador DX100
+   * Activar el Teach Pendant, verificar que la pantalla muestra los datos del robot.
+   * Seleccionar el Modo de Operación. Se gira el selector y se elige Teach Mode para habilitar el control manual. Se presiona el botón "Servo ON" para habilitar los motores del robot (se debe mantener presionado el botón de habilitación). 
+2. Cambio entre Modos de Movimiento
+   * Modo Articulado - Movimiento por Ejes: En el Teach Pendant, se presiona el botón "COORD" hasta que en la pantalla aparezca "Joint".
+   * Modo Cartesiano - Movimiento en X, Y, Z: se resiona el botón "COORD" hasta que en la pantalla aparezca "World".
+   * Modo de Herramienta - Movimiento en Base a la Herramienta: Se presiona el botón "COORD" hasta que en la pantalla aparezca "Tool"
+   * Modo de Usuario - Movimiento en un Marco de Referencia Personalizado: Se presiona el botón "COORD" hasta que en la pantalla aparezca "User".
+3. Realizar Traslaciones en X, Y, Z: Para mover el efector final en línea recta en el sistema de coordenadas
+   * Estar en Modo Cartesiano o Modo de Herramienta
+   * Utilizar las teclas de movimiento
+   * Mantener presionado el botón de habilitación para ejecutar el movimiento
+     
+4. Realizar Rotaciones en los Ejes X, Y, Z: Para rotar el efector final alrededor de los ejes cartesianos
+   * Estar en Modo Cartesiano o Modo de Herramienta.
+   * Utilizar las teclas de rotación
+   * Mantener presionado el botón de habilitación
+     
+5. Salir del Modo Manual y Finalizar
+   * Una vez ajustada la posición, se suelta el botón de habilitación.
+   * En caso de desear ejecutar un programa cambiar el selector de modo en el DX100 a "Auto".
+   * Guardar la posición si es necesario antes de ejecutar una rutina automática.
+  
+
+
 
 ## Aplicaciones industruales
 
