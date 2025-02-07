@@ -205,18 +205,20 @@ Dado lo anterior, se puede presentar la comparación entre RoboDK y RobotStudio 
   -  Carga, descarga y manipulación de materiales: Se emplea en líneas de producción automatizadas, optimizando la transferencia de piezas y el mantenimiento de máquinas. Su capacidad para manipular materiales frágiles y de alta precisión le permite mejorar la calidad del proceso productivo, minimizando el margen de error y reduciendo el desgaste de los componentes.   
 
 # Practica
-Se realizo un código en python tomando como base el codigo de ejemplo presentado en la documentación del laboratorio, la idea era hacer una figura sensilla basada en la forma de una flor definida apartir de coordenadas polares, utilizando la siguiente expreción:
-$$
-r = \frac{A \cdot \left(1 + b \cdot \sin(k \cdot \theta)\right)}{1 + b}
-$$
-Para esto entoces se definieron los siguiente parametros a considerar fueron los siguientes:
-| Parametro | Descripción |
+Se realizo un código en python tomando como base el código de ejemplo presentado en la documentación del laboratorio, la idea era hacer una figura sencilla basada en la forma de una flor definida a partir de coordenadas polares, utilizando la siguiente expresión:
+
+ $\ r = \frac{A \cdot \left(1 + b \cdot \sin(k \cdot \theta)\right)}{1 + b}\$
+ 
+Para esto entonces se definieron los siguiente parámetros a considerar fueron los siguientes:
+| Parámetro | Descripción |
 | --- | --- |
 | num_points = 720 |  Cuántos puntos muestreamos (mayor = más suave) |
 | A = 150          |  Amplitud (300 mm = radio máximo)  |
-| k = 7            |  Cantidad de petalos que tendrá la  flor.|
-| b = 0.5          |  Profundidad de los petalos, Un valor entre 0 y 1.(0 = Circulo; 1 = Sin centro) |
-La 
+| k = 7            |  Cantidad de pétalos que tendrá la  flor.|
+| b = 0.5          |  Profundidad de los pétalos, Un valor entre 0 y 1.(0 = Círculo; 1 = Sin centro) |
+
+En el código de ejemplo se identificó un error en la variable z_safe, pues esta no tenía en cuenta la orientación del sistema de coordenadas del efector final, lo que ocasiona que este mismo entrará en contacto con la mesa, esto se corrigió cambiando el signo de este parámetro.
+
 
 
 En el video del enlace se encuentra la simulación realizada en RoboDK de la trayectoria polar, junto con la implementación en físico: https://youtu.be/HFBkZd5oSZs
