@@ -205,7 +205,7 @@ Dado lo anterior, se puede presentar la comparación entre RoboDK y RobotStudio 
   -  Carga, descarga y manipulación de materiales: Se emplea en líneas de producción automatizadas, optimizando la transferencia de piezas y el mantenimiento de máquinas. Su capacidad para manipular materiales frágiles y de alta precisión le permite mejorar la calidad del proceso productivo, minimizando el margen de error y reduciendo el desgaste de los componentes.   
 
 # Practica
-Se realizo un código en python tomando como base el código de ejemplo presentado en la documentación del laboratorio, la idea era hacer una figura sencilla basada en la forma de una flor definida a partir de coordenadas polares, utilizando la siguiente expresión:
+Se realizó un código en python tomando como base el código de ejemplo presentado en la documentación del laboratorio, la idea era hacer una figura sencilla basada en la forma de una flor definida a partir de coordenadas polares, utilizando la siguiente expresión:
 
  $\ r = \frac{A \cdot \left(1 + b \cdot \sin(k \cdot \theta)\right)}{1 + b}\$
  
