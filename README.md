@@ -54,7 +54,7 @@ En este informe de laboratorio se comparan dos manipuladores ampliamente utiliza
 | Eje -2 (Movimiento del brazo)| +110°, -90°|
 | Eje -3 (Movimiento del brazo)| +50°,-230°|
 | Eje -4 (Movimiento de la muñeca)| ±200°|
-| Eje -5 (Movimiento de doblado)| +120°, -120°|
+| Eje -5 (Movimiento de doblado)| ±120°|
 | Eje -6 (Movimiento de giro)| ±400°|
 
 ## Controlador 
@@ -185,5 +185,6 @@ Se realizo un código en python
 * Especificaciones del producto Robot articulado IRB 140. ABB, s. f. [En línea]. Disponible: https://library.e.abb.com/public/4c9f370fc8f37781c1257b4b0051c907/3HAC10319-1_rev4_es_library.pdf
 * Especificaciones del producto Controller IRC5 with FlexPendant RobotWare 5.15. ABB, s. f. [En línea]. Disponible: https://library.e.abb.com/public/2b5b950d68a0503cc1257c0c003cb703/3HAC041344-es.pdf
 * Manuel d’instructions REFERENCIA PARA Tabla de instrucciones básicas Programación y reproducción simplificadas Listado de alarmas DX100. Motoman Yaskawa Co., s. f. [En línea]. Disponible: http://www.infoPLC.net
+* MOTOMAN-MH6 INSTRUCTIONS. Yaskawa, s. f.
 * “Controlador de seguridad para robots Yaskawa FSU - Robótica y automática - Controlador de seguridad para robots”. Interempresas: Productos e Información para la industria y la empresa. [En línea]. Disponible: https://www.interempresas.net/Robotica/FeriaVirtual/Producto-Controlador-de-seguridad-para-robots-Yaskawa-FSU-107633.html
 * “¿Cómo mover un Robot Industrial? | Sigma imecsa”. Sigma Imecsa. [En línea]. Disponible: https://www.sigmaimecsa.com/como-mover-un-robot-industrial.html
