@@ -148,10 +148,16 @@ ENDMODULE
 ```
 Con este ejemplo es posible evidenciar que se tiene un código estructurado en módulos y procedimientos, más legible y reutilizable. Se emplea el uso de variables robtarget para definir posiciones. Y se usan comandos MoveJ y MoveL para movimientos con control de velocidad y precisión.
 
-## Plataformas de simulación y programación
+
+## Comparación de las plataformas de simulación y programación
 
 ### RoboDK
 RoboDK es un software versátil compatible con más de 50 marcas de robots, lo que lo convierte en una solución ideal para entornos con múltiples fabricantes. Permite la exportación de programas a diversos controladores y lenguajes de programación (RAPID, INFORM, KRL, TP, etc.), aunque no emula con precisión los controladores reales, sino que traduce el código según el robot utilizado.
+
+RoboDK se comunica con los manipuladores a través de distintas formas, dependiendo del fabricante y del controlador: 
+* Generación de código nativo, en donde traduce las trayectorias en programas compatibles con el lenguaje del controlador (ej. RAPID para ABB, INFORM para Yaskawa, KRL para KUKA).
+* Conexión en tiempo real, lo cual permite el control directo del robot a través de Ethernet, utilizando protocolos como TCP/IP y MODBUS.
+* Uso de Plugins y API, lo cual hace que sea compatible con Python y otros lenguajes de programación para personalizar y automatizar la generación de trayectorias.
 
 Su enfoque se centra en la simulación de trayectorias y movimientos de manera general, con menor integración de procesos avanzados como visión artificial o sensores. Su interfaz intuitiva lo hace accesible para principiantes, permitiendo la generación de trayectorias sin necesidad de conocimientos profundos en programación o controladores específicos.
 
@@ -212,7 +218,9 @@ Para esto entoces se definieron los siguiente parametros a considerar fueron los
 | b = 0.5          |  Profundidad de los petalos, Un valor entre 0 y 1.(0 = Circulo; 1 = Sin centro) |
 La 
 
-Se realizo un código en python
+
+En el video del enlace se encuentra la simulación realizada en RoboDK de la trayectoria polar, junto con la implementación en físico: https://youtu.be/HFBkZd5oSZs
+
 
 # Conclusiones (falta redactar)
 * Si se necesita mayor precisión y flexibilidad en espacios reducidos, el ABB IRB 140 es la mejor opción.
