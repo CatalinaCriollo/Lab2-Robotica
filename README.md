@@ -156,3 +156,10 @@ Se realizo un código en python
 * El Teach Pendant del DX100 es ideal para entornos industriales que requieren control centralizado de múltiples robots, con una programación detallada pero menos visual. Su enfoque en el lenguaje INFORM puede hacer que la curva de aprendizaje sea más pronunciada.
 * El Teach Pendant del IRC5 ofrece una interfaz más intuitiva y moderna con pantalla táctil, facilitando la programación y configuración del robot. Su integración con RobotStudio y el uso de RAPID lo hacen más accesible y eficiente en la optimización de procesos industriales.
 * En general, RAPID es más avanzado y flexible, ideal para aplicaciones donde se requiere personalización, integración con sistemas modernos y programación estructurada. INFORM, en cambio, está más enfocado en la programación de robots en entornos industriales con múltiples manipuladores, donde la rapidez en la configuración es clave.
+
+# Referencias
+* Especificaciones del producto Robot articulado IRB 140. ABB, s. f. [En línea]. Disponible: https://library.e.abb.com/public/4c9f370fc8f37781c1257b4b0051c907/3HAC10319-1_rev4_es_library.pdf
+* Especificaciones del producto Controller IRC5 with FlexPendant RobotWare 5.15. ABB, s. f. [En línea]. Disponible: https://library.e.abb.com/public/2b5b950d68a0503cc1257c0c003cb703/3HAC041344-es.pdf
+* Manuel d’instructions REFERENCIA PARA Tabla de instrucciones básicas Programación y reproducción simplificadas Listado de alarmas DX100. Motoman Yaskawa Co., s. f. [En línea]. Disponible: http://www.infoPLC.net
+* “Controlador de seguridad para robots Yaskawa FSU - Robótica y automática - Controlador de seguridad para robots”. Interempresas: Productos e Información para la industria y la empresa. [En línea]. Disponible: https://www.interempresas.net/Robotica/FeriaVirtual/Producto-Controlador-de-seguridad-para-robots-Yaskawa-FSU-107633.html
+* “¿Cómo mover un Robot Industrial? | Sigma imecsa”. Sigma Imecsa. [En línea]. Disponible: https://www.sigmaimecsa.com/como-mover-un-robot-industrial.html
