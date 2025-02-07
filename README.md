@@ -33,6 +33,30 @@ En este informe de laboratorio se comparan dos manipuladores ampliamente utiliza
 | Software de programación | MotoPlus, INFORM II | RAPID|
 | Aplicaciones principales | Soldadura, ensamblaje, manipulación de materiales | Ensamblaje, manipulación de materiales, carga/descarga, soldadura |
 
+## Movimiento del robot
+
+### Motoman MH6:
+
+| Eje | Rango de movimiento | 
+| --- | --- | 
+| Eje -S (Giro)| ±170°|
+| Eje -L (Brazo inferior)| +155°, -90°|
+| Eje -U (Brazo superior)| +250°,-175°|
+| Eje -R (Rotación de la muñeca)| ±180°|
+| Eje -B (Inclincación de la muñeca)| +255°, -45°|
+| Eje -T (Giro de la muñeca)| ±360°|
+
+### ABB IRB 140:
+
+| Eje | Rango de movimiento | 
+| --- | --- | 
+| Eje -1 (Movimiento de rotación)| ±180°|
+| Eje -2 (Movimiento del brazo)| +110°, -90°|
+| Eje -3 (Movimiento del brazo)| +50°,-230°|
+| Eje -4 (Movimiento de la muñeca)| ±200°|
+| Eje -5 (Movimiento de doblado)| +120°, -120°|
+| Eje -6 (Movimiento de giro)| ±400°|
+
 ## Controlador 
 ### Motoman MH6:
   
