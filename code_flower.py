@@ -35,7 +35,7 @@ robot.setRounding(5)  # blending (radio de curvatura)
 #------------------------------------------------
 num_points = 720       # Cuántos puntos muestreamos (mayor = más suave)
 A = 150               # Amplitud (300 mm = radio máximo)
-k = 7                  # Parámetro de la rosa (pétalos). Si es impar, habrá k pétalos; si es par, 2k
+k = 7                  # Parámetro de la rosa (pétalos).
 b = 0.5                # Profundidad de los petalos
 z_surface = 0          # Z=0 en el plano del frame
 z_safe = -50            # Altura segura para aproximarse y salir
