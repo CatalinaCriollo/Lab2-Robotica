@@ -148,6 +148,35 @@ ENDMODULE
 ```
 Con este ejemplo es posible evidenciar que se tiene un código estructurado en módulos y procedimientos, más legible y reutilizable. Se emplea el uso de variables robtarget para definir posiciones. Y se usan comandos MoveJ y MoveL para movimientos con control de velocidad y precisión.
 
+## Plataformas de simulación y programación
+
+### RoboDK
+RoboDK es un software versátil compatible con más de 50 marcas de robots, lo que lo convierte en una solución ideal para entornos con múltiples fabricantes. Permite la exportación de programas a diversos controladores y lenguajes de programación (RAPID, INFORM, KRL, TP, etc.), aunque no emula con precisión los controladores reales, sino que traduce el código según el robot utilizado.
+
+Su enfoque se centra en la simulación de trayectorias y movimientos de manera general, con menor integración de procesos avanzados como visión artificial o sensores. Su interfaz intuitiva lo hace accesible para principiantes, permitiendo la generación de trayectorias sin necesidad de conocimientos profundos en programación o controladores específicos.
+
+Es ampliamente utilizado en educación, investigación y programación multimarca, con aplicaciones en mecanizado, impresión 3D y paletizado gracias a su capacidad de importar modelos CAD. Además, su costo accesible y compatibilidad con hardware modesto lo hacen una opción flexible y eficiente.
+
+### RobotStudio
+
+RobotStudio es el software exclusivo de ABB, compatible únicamente con su controlador IRC5 y versiones anteriores. Basado en el lenguaje RAPID, permite simular con precisión el comportamiento real del robot, ofreciendo control avanzado del movimiento en tiempo real.
+
+Su integración con herramientas de visión artificial, sensores y automatización en la nube lo hace ideal para la optimización de trayectorias y simulaciones detalladas en entornos de producción. Aunque su interfaz ofrece amplias opciones de configuración, está orientada a ingenieros con experiencia en ABB, lo que implica una curva de aprendizaje más pronunciada.
+
+Requiere hardware potente para simulaciones avanzadas y su licencia comercial tiene un costo elevado, aunque dispone de una versión gratuita con funciones limitadas.
+
+Dado lo anterior, se puede presentar la comparación entre RoboDK y RobotStudio por medio de la siguiente tabla:
+
+### Tabla de comparación
+
+| Característica | RoboDK | RobotStudio|
+| --- | --- | --- |
+| Compatibilidad | Multimarca (ABB, Yaskawa, KUKA, etc.) | SoloABB|
+|Programación | Lenguaje adaptable según el robot | RAPID |
+|Simulación | Más genérica, sin emulación del controlador | Precisa con control exacto del robot ABB |
+| Facilidad de uso | Más intuitivo y accesible | Más complejo, orientado a expertos en ABB |
+| Costo | Más accesible y con licencias flexibles | Alto, pero con versión gratuita limitada |
+
 ## Aplicaciones industruales
 
 ### Motoman MH6:
@@ -180,6 +209,7 @@ Se realizo un código en python
 * El Teach Pendant del DX100 es ideal para entornos industriales que requieren control centralizado de múltiples robots, con una programación detallada pero menos visual. Su enfoque en el lenguaje INFORM puede hacer que la curva de aprendizaje sea más pronunciada.
 * El Teach Pendant del IRC5 ofrece una interfaz más intuitiva y moderna con pantalla táctil, facilitando la programación y configuración del robot. Su integración con RobotStudio y el uso de RAPID lo hacen más accesible y eficiente en la optimización de procesos industriales.
 * En general, RAPID es más avanzado y flexible, ideal para aplicaciones donde se requiere personalización, integración con sistemas modernos y programación estructurada. INFORM, en cambio, está más enfocado en la programación de robots en entornos industriales con múltiples manipuladores, donde la rapidez en la configuración es clave.
+* Si se necesita una simulación precisa y fiel al comportamiento real del robot ABB, RobotStudio es mejor. Si se necesita una herramienta más generalista para programar diferentes robots, RoboDK es la mejor opción.
 
 # Referencias
 * Especificaciones del producto Robot articulado IRB 140. ABB, s. f. [En línea]. Disponible: https://library.e.abb.com/public/4c9f370fc8f37781c1257b4b0051c907/3HAC10319-1_rev4_es_library.pdf
