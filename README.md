@@ -242,7 +242,7 @@ Para esto entonces se definieron los siguiente parámetros a considerar fueron l
 En el código de ejemplo se identificó un error en la variable z_safe, pues esta no tenía en cuenta la orientación del sistema de coordenadas del efector final, lo que ocasiona que este mismo entrará en contacto con la mesa, esto se corrigió cambiando el signo de este parámetro.
 
 
-
+## Video de la simulación e implementación 
 En el video del enlace se encuentra la simulación realizada en RoboDK de la trayectoria polar, junto con la implementación en físico: https://youtu.be/HFBkZd5oSZs
 
 
