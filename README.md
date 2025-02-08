@@ -190,7 +190,6 @@ Dado lo anterior, se puede presentar la comparación entre RoboDK y RobotStudio 
   * Por lo general es la posición estándar a la que el robot regresa al encenderse o después de completar una tarea.
   * Se establece con una configuración segura y accesible para evitar colisiones.
   * Suele ser una posición retraída con el brazo en una postura compacta, facilitando la calibración y el mantenimiento.
-  * El robot se encuentra en una posición neutral, con todos sus ejes en cero grados.
   * Es utilizada como punto de partida para la mayoría de los programas.
 2.	Home2 (Posición alternativa o intermedia)
   * Se configura según las necesidades del proceso, por ejemplo, una posición de espera antes de ejecutar una operación.
@@ -203,6 +202,15 @@ En cuanto a que posición es mejor, esto depende del contexto de uso:
 Si se busca seguridad y mantenimiento, Home1 es la mejor opción, ya que el robot está completamente retraído y alejado del área de trabajo.
 Por otro lado, si se prioriza la eficiencia y reducción de tiempos de ciclo, Home2 es más conveniente, pues el robot ya se encuentra en una posición más cercana a la tarea a ejecutar.
 Por lo tanto, en aplicaciones donde el robot debe moverse rápidamente entre ciclos productivos, Home2 es preferible porque reduce el tiempo de desplazamiento innecesario. Sin embargo, en situaciones donde el robot debe detenerse en una posición segura o evitar colisiones, Home1 es la opción ideal.
+
+| Eje | Work Home Position | Second Home Position|
+| --- | --- | --- |
+| S | 0.0000° | 0.0000° |
+| L | 88.6629°| -1.5665°|
+| U | -81.0787° | 1.7135° |
+| R | -0.0017° | 0.0000° |
+| B | 51-7618° | -0.1468° |
+| T | -3.2709° | -3.2709° |
 
 ### Procedimiento Detallado para Realizar Movimientos Manuales en el Motoman MH6
 1. Preparación del Robot para el Movimiento Manual
